@@ -1,65 +1,64 @@
-# LlamaInteract
+# ModelInteract
 
-**LlamaInteract** is a versatile, AI-powered platform developed by *The Vanguards*, offering both terminal and web-based interfaces for dynamic, real-time AI interactions. This project is designed for flexibility, enabling users to easily switch between different language models and experience immediate response streaming.
+**ModelInteract** is a versatile tool that provides both a command-line interface (CLI) and a web application for seamless interaction with multiple AI models, including Llama and Gemini. This project enables users to experience real-time text generation and conversation with advanced AI models, tailored to their specific needs.
 
 ## Features
 
-- **Dual Interface Flexibility**: Interact via Terminal Interface or through a user-friendly Web Application.
-- **Real-Time Streaming**: Immediate feedback and interaction using Server-Sent Events (SSE).
-- **Dynamic Model Integration**: Easily switch between models without extensive reconfiguration.
-- **Modular Design**: Structured for easy maintenance and future enhancements.
-
-## Technology Stack
-
-- **Python**: Core programming language.
-- **Flask**: Framework for the web application.
-- **Ollama**: Library for model interactions and streaming.
-- **HTML/CSS/JavaScript**: For building and styling the web interface.
-- **Server-Sent Events (SSE)**: For real-time communication between server and client.
+- **Multi-Model Support**: Interact with various AI models, including Llama and Gemini.
+- **Interactive CLI**: Engage with AI models directly from the terminal.
+- **Web Application**: Access and interact with AI models through a user-friendly web interface.
+- **Real-Time Streaming**: Receive instant, continuous responses during your interactions.
+- **Customizable Experience**: Modify settings and parameters to suit your requirements.
 
 ## Installation
 
-1. **Clone the repository**:
+1. Clone the repository:
+
     ```bash
-    git clone https://github.com/Abhrankan-Chakrabarti/LlamaInteract.git
-    cd LlamaInteract
+    git clone https://github.com/Abhrankan-Chakrabarti/ModelInteract.git
+    cd ModelInteract
     ```
 
-2. **Install dependencies**:
+2. Install the required dependencies:
+
     ```bash
     pip install -r requirements.txt
     ```
 
-3. **Run the Web Application**:
-    ```bash
-    python app.py
-    ```
-    Visit `http://127.0.0.1:5000` in your browser.
-
-4. **Run the Terminal Interface**:
-    ```bash
-    python terminal.py
-    ```
-
 ## Usage
 
-- **Terminal Mode**:
-  - Run `terminal.py` and follow the prompts to interact with the AI model directly through the terminal.
-  - Type `exit` to quit the terminal mode.
+### Command-Line Interface (CLI)
 
-- **Web App Mode**:
-  - Start the web server using `app.py` and interact through the browser interface.
-  - Input your queries and receive real-time responses directly on the webpage.
+To start the CLI:
+
+```bash
+python terminal.py
+```
+
+Enter your input directly into the terminal to interact with the AI models. Type `exit` to end the session.
+
+### Web Application
+
+To start the web app:
+
+```bash
+python app.py
+```
+
+Open your browser and go to `http://localhost:5000` to access the web interface.
+
+### Configuration
+
+You can configure the models and other settings by modifying the `config.json` file in the root directory.
 
 ## Contributing
 
-We welcome contributions! Please fork the repository, create a feature branch, and submit a pull request with your improvements or new features.
+Contributions are welcome! Please open an issue or submit a pull request if you have suggestions or improvements.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## Authors
+## Contact
 
-- **Abhrankan Chakrabarti**
-- **The Vanguards** Team
+For any questions or inquiries, please contact Abhrankan Chakrabarti at abhrankan@gmail.com.
