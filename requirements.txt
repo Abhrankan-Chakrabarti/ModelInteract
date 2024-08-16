@@ -1,4 +1,6 @@
 getch
 rich
+google-generativeai
+google-auth-oauthlib
 ollama
 flask
