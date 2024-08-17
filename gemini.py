@@ -5,5 +5,10 @@ creds = load_creds()
 
 genai.configure(credentials=creds)
 
-model = genai.GenerativeModel('gemini-pro')
+import json
+
+with open('config.json', 'r') as f:
+    config = json.load(f)
+
+model = genai.GenerativeModel(config['model'])
 from gstream import *
