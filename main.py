@@ -1,3 +1,5 @@
+from console_menu import Console, Menu
+
 def model_selector():
     console = Console(width=59, height=30)
     while True:
