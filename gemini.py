@@ -6,4 +6,4 @@ creds = load_creds()
 genai.configure(credentials=creds)
 
 model = genai.GenerativeModel('gemini-pro')
-from stream import *
+from gstream import *
