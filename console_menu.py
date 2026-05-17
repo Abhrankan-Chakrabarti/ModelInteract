@@ -65,7 +65,7 @@ class Menu:
                 self.print_menu(self.justify_menu)
                 self.print_options(self.justify_options)
 
-        elif key == '\n':
+        elif key == b'\r':
             os.system(cls)
             return False
 
@@ -75,7 +75,7 @@ class Menu:
             self.print_options(self.justify_options)
 
     def choice(self, listener=''):
-        while listener != '\n':
+        while listener != b'\r':
             listener = getch()
             self.on_press(listener)
 

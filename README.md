@@ -7,6 +7,7 @@
 - **Multi-Model Support**: Interact with various AI models, including Llama and Gemini.
 - **Interactive CLI**: Engage with AI models directly from the terminal.
 - **Web Application**: Access and interact with AI models through a user-friendly web interface.
+- **Voice Assistant Support**: Use `ruby.py` for microphone-driven speech recognition, text-to-speech, and simple web automation commands.
 - **Real-Time Streaming**: Receive instant, continuous responses during your interactions.
 - **Customizable Experience**: Modify settings and parameters to suit your requirements.
 
@@ -23,6 +24,12 @@
 
     ```bash
     pip install -r requirements.txt
+    ```
+
+3. (Optional) Install extra dependencies to use `ruby.py` as a voice assistant:
+
+    ```bash
+    pip install SpeechRecognition pyttsx3 pywhatkit pyserial
     ```
 
 ## Usage
@@ -46,6 +53,18 @@ python app.py
 ```
 
 Open your browser and go to `http://localhost:5000` to access the web interface.
+
+### Voice Assistant (`ruby.py`)
+
+To start the voice assistant module:
+
+```bash
+python ruby.py
+```
+
+- Speak commands after the script detects the wake word `ruby`.
+- It supports speech recognition, text-to-speech, YouTube playback, web search, opening URLs, and simple serial commands.
+- Optional dependencies are required for microphone and audio features.
 
 ### Configuration
 

@@ -4,4 +4,7 @@ from stream import *
 # Ensure the model is available
 if model not in [i['model'][:-7] for i in ollama.list()['models']]:
     # Create a new Llama object
-    ollama.create(model=model, modelfile=f'FROM {file}')
+    #ollama.create(model=model, modelfile=f'FROM {file}')
+    with open(f'{file}.modelfile', 'w') as f:
+        f.write(f'FROM {file}')
+    os.system(f'ollama create {model} -f {file}.modelfile')

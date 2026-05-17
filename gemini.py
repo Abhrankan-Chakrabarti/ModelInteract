@@ -1,9 +1,12 @@
+import os
 import google.generativeai as genai
-from load_creds import load_creds
+from dotenv import load_dotenv
 
-creds = load_creds()
+load_dotenv()
 
-genai.configure(credentials=creds)
+GOOGLE_API_KEY = os.getenv("api_key")
+
+genai.configure(api_key=GOOGLE_API_KEY)
 
 import json
 
