@@ -1,6 +1,6 @@
 # ModelInteract
 
-**ModelInteract** is a versatile tool that provides both a command-line interface (CLI) and a web application for seamless interaction with multiple AI models, including Llama and Gemini. This project enables users to experience real-time text generation and conversation with advanced AI models, tailored to their specific needs.
+**ModelInteract** is a versatile CLI and web app for interacting with multiple AI models, including Llama and Gemini, offering real-time text generation and customizable experiences.
 
 ## Features
 
